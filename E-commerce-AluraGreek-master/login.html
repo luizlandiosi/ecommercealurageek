@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/icon/logo.svg"
+      type="image/x-icon"
+    />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/login-style/header.css" />
+    <link rel="stylesheet" href="./src/css/home-style/about-us.css" />
+    <link rel="stylesheet" href="./src/css/home-style/contact.css" />
+    <link rel="stylesheet" href="./src/css/home-style/footer.css" />
+    <link rel="stylesheet" href="./src/css/login-style/login.css" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="loading__container">
+      <img class="loading" src="./src/assets/img/loading.svg" alt="loading" />
+    </div>
+    <header class="header">
+      <nav class="header__nav nav">
+        <div class="nav__logo-container">
+          <a href="./index.html" title="inicio">
+            <img class="nav__logo" src="./src/assets/img/Logo.svg" alt="logo" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+            <section class="login">
+        <form class="login__from">
+          <h2 class="login__title">Inicar sessão</h2>
+          <div class="login__field">
+            <input
+              class="login__field-input"
+              name="email"
+              placeholder="Seu email"
+              type="email"
+              id="email"
+            />
+          </div>
+          <div class="login__field login__field--password">
+            <input
+              class="login__field-input"
+              name="password"
+              placeholder="Senha"
+              type="password"
+              id="password"
+            />
+          </div>
+          <span class="field__validate"></span>
+
+          <button
+            type="submit"
+            href="./administration-product.html"
+            class="login__btn"
+          >
+            Entrar
+          </button>
+        </form>
+      </section>
+
+      
+      <section class="about-contact">
+        <div class="logo">
+          <img class="logo__img" src="./src/assets/img/Logo.svg" alt="logo" />
+        </div>
+        
+        <section class="about-us">
+          <ul class="about-us__items">
+            <li class="about-us__item">
+              <a class="about-us__link" href="#" title="Quem Somos"
+                >Quem somos</a
+              >
+            </li>
+
+            <li class="about-us__item">
+              <a class="about-us__link" href="#" title="Política de privacidade">
+                Política de privacidade
+              </a>
+            </li>
+
+            <li class="about-us__item">
+              <a class="about-us__link" href="#" title="Programa de fidelidade">
+                Programa de fidelidade
+              </a>
+            </li>
+
+            <li class="about-us__item">
+              <a class="about-us__link" href="#" title="Nossas lojas"
+                >Nossa lojas</a
+              >
+            </li>
+
+            <li class="about-us__item">
+              <a
+                class="about-us__link"
+                href="#"
+                title="Quero ser um franqueado"
+              >
+                Quero ser um franqueado
+              </a>
+            </li>
+
+            <li class="about-us__item">
+              <a class="about-us__link" href="#" title="Anúncie aqui"
+                >Anúncie aqui</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        
+        <section class="contact">
+          <h2 class="contact__title">Fale conosco</h2>
+
+          <form class="contact__from">
+            <div class="contact__field contact__field--name">
+              <span class="name__validate"></span>
+              <label class="contact__field-label" for="name">Nome</label>
+              <input
+                class="contact__field-input"
+                name="name"
+                type="text"
+                id="name"
+              />
+            </div>
+            <div class="contact__field contact__field--message">
+              <span class="message__validate"></span>
+              <label class="contact__field-label" for="message">
+                Escreva sua mensagem
+              </label>
+
+              <textarea
+                class="contact__field-textarea"
+                name="message"
+                id="message"
+                cols="1"
+                rows="2"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="contact__btn">Enviar mensagem</button>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__owner">        
+    </footer>
+
+    <script type="module" src="./src/js/index.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
